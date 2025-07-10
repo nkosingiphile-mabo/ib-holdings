@@ -19,7 +19,6 @@
 </head>
 
 <body class="font-sans text-white bg-black">
-
     <!-- Top Banner (Hidden on small screens) -->
     <div class="hidden md:flex bg-yellow-500 text-black text-sm px-4 py-2 justify-between items-center">
         <!-- Left: Contact Info -->
@@ -59,8 +58,7 @@
             </ul>
 
             <!-- CTA Button (Desktop only) -->
-            <a href="contact.html"
-                class="hidden md:inline-block bg-yellow-500 text-black font-semibold px-4 py-2 rounded hover:bg-yellow-400 transition duration-300">
+            <a href="contact.html" class="hidden md:inline-block bg-yellow-500 text-black font-semibold px-4 py-2 rounded hover:bg-yellow-400 transition duration-300">
                 Get a Quote
             </a>
         </div>
@@ -76,28 +74,251 @@
         </div>
     </nav>
 
-    <!-- Hero Section with Video Background -->
-    <section class="relative h-screen overflow-hidden">
-        <!-- Background Video -->
-        <video autoplay loop muted playsinline class="absolute w-full h-full object-cover">
-            <source src="assets/videos/hero-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-        </video>
-
-        <!-- Dark Overlay + Text Content -->
-        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <!-- About Hero Section -->
+    <section class="relative h-[70vh] bg-cover bg-center" style="background-image: url('assets/images/asphalt_5.jpg');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
             <div class="text-center px-4 max-w-3xl mx-auto">
                 <h2 class="text-4xl md:text-6xl font-bold text-yellow-500 mb-6">
-                    Paving the Future with Asphalt Excellence
+                    About IB Holdings Asphalt
                 </h2>
                 <div class="w-24 h-1 bg-white mx-auto mb-6 rounded"></div>
-                <p class="text-white text-lg md:text-xl mb-6">
-                    High-performance asphalt for safer roads and durable infrastructure designed to last for years.
+                <p class="text-white text-lg md:text-xl">
+                    A trusted name in asphalt manufacturing and road surfacing, committed to innovation and quality.
                 </p>
-                <a href="#contact"
-                    class="inline-block bg-yellow-500 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-400 transition duration-300">
-                    Get a Quote
-                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="bg-white text-black py-16 px-6 md:px-16">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-10 relative">
+
+                <!-- Divider Line for Medium+ Screens -->
+                <div class="hidden md:block absolute left-1/2 top-0 h-full w-px bg-yellow-500"></div>
+
+                <!-- Vision -->
+                <div class="pr-6 md:pr-12">
+                    <h3 class="text-3xl font-bold text-yellow-500 mb-4">Our Vision</h3>
+                    <p class="text-lg leading-relaxed text-gray-800">
+                        To become a leading African provider of innovative asphalt solutions that revolutionize road infrastructure and connectivity.
+                    </p>
+                </div>
+
+                <!-- Mission -->
+                <div class="pl-6 md:pl-12">
+                    <h3 class="text-3xl font-bold text-yellow-500 mb-4">Our Mission</h3>
+                    <p class="text-lg leading-relaxed text-gray-800">
+                        To provide superior asphalt materials and services that ensure long-lasting road quality, support economic mobility, and contribute to public safety and infrastructure development.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Advantages Slider Section -->
+    <section class="bg-black text-white py-16 px-6 md:px-16">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Competitive Advantages</h2>
+            <div class="w-20 h-1 bg-yellow-500 mx-auto mb-10 rounded"></div>
+
+            <!-- Swiper Container -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide bg-gray-900 p-6 rounded-lg shadow-lg transition-transform hover:-translate-y-2">
+                        <i class="fas fa-industry text-yellow-400 text-3xl mb-4"></i>
+                        <h4 class="text-xl font-semibold mb-2">Local Production Facility</h4>
+                        <p>Reduces lead times and logistics cost.</p>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide bg-gray-900 p-6 rounded-lg shadow-lg transition-transform hover:-translate-y-2">
+                        <i class="fas fa-certificate text-yellow-400 text-3xl mb-4"></i>
+                        <h4 class="text-xl font-semibold mb-2">Quality Assurance</h4>
+                        <p>Complies with SANS & international standards.</p>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide bg-gray-900 p-6 rounded-lg shadow-lg transition-transform hover:-translate-y-2">
+                        <i class="fas fa-shipping-fast text-yellow-400 text-3xl mb-4"></i>
+                        <h4 class="text-xl font-semibold mb-2">Fast Response Teams</h4>
+                        <p>24–48-hour turnaround for pothole emergencies.</p>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide bg-gray-900 p-6 rounded-lg shadow-lg transition-transform hover:-translate-y-2">
+                        <i class="fas fa-handshake text-yellow-400 text-3xl mb-4"></i>
+                        <h4 class="text-xl font-semibold mb-2">Strategic Partnerships</h4>
+                        <p>With municipalities and transport authorities.</p>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide bg-gray-900 p-6 rounded-lg shadow-lg transition-transform hover:-translate-y-2">
+                        <i class="fas fa-lightbulb text-yellow-400 text-3xl mb-4"></i>
+                        <h4 class="text-xl font-semibold mb-2">Innovation</h4>
+                        <p>Ongoing R&D for better-performing materials.</p>
+                    </div>
+                </div>
+
+                <!-- Pagination Dots -->
+                <div class="swiper-pagination mt-8 text-white"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Clients Section -->
+    <section class="bg-gray-100 text-black py-16 px-6 md:px-16">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Key Clients & Sectors Served</h2>
+            <div class="w-20 h-1 bg-yellow-500 mx-auto mb-10 rounded"></div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Client Card -->
+                <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+                    <i class="fas fa-city text-yellow-500 text-3xl mb-4"></i>
+                    <h4 class="font-semibold text-lg">Municipalities & Local Governments</h4>
+                </div>
+
+                <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+                    <i class="fas fa-road text-yellow-500 text-3xl mb-4"></i>
+                    <h4 class="font-semibold text-lg">Department of Transport</h4>
+                </div>
+
+                <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+                    <i class="fas fa-hard-hat text-yellow-500 text-3xl mb-4"></i>
+                    <h4 class="font-semibold text-lg">Civil Engineering Contractors</h4>
+                </div>
+
+                <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+                    <i class="fas fa-industry text-yellow-500 text-3xl mb-4"></i>
+                    <h4 class="font-semibold text-lg">Mining & Industrial Parks</h4>
+                </div>
+
+                <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+                    <i class="fas fa-building text-yellow-500 text-3xl mb-4"></i>
+                    <h4 class="font-semibold text-lg">Commercial Developers</h4>
+                </div>
+
+                <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+                    <i class="fas fa-home text-yellow-500 text-3xl mb-4"></i>
+                    <h4 class="font-semibold text-lg">Private Estates & Driveways</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact & Sustainability Section -->
+    <section class="bg-white text-black py-16 px-6 md:px-16">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Impact & Sustainability Goals</h2>
+            <div class="w-20 h-1 bg-yellow-500 mx-auto mb-10 rounded"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <!-- Goal 1 -->
+            <div class="bg-gray-100 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                <div class="text-yellow-500 text-4xl mb-4">
+                    <i class="fas fa-car-crash"></i>
+                </div>
+                <h4 class="font-semibold text-lg mb-2">Reduce Road Accidents</h4>
+                <p class="text-sm text-gray-700">
+                    By improving road quality and reducing pothole hazards.
+                </p>
+            </div>
+
+            <!-- Goal 2 -->
+            <div class="bg-gray-100 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                <div class="text-green-600 text-4xl mb-4">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h4 class="font-semibold text-lg mb-2">Green Infrastructure</h4>
+                <p class="text-sm text-gray-700">
+                    Promoting eco-modified asphalt blends for a sustainable future.
+                </p>
+            </div>
+
+            <!-- Goal 3 -->
+            <div class="bg-gray-100 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                <div class="text-blue-600 text-4xl mb-4">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h4 class="font-semibold text-lg mb-2">Economic Empowerment</h4>
+                <p class="text-sm text-gray-700">
+                    Supporting job creation and skill development in local communities.
+                </p>
+            </div>
+
+            <!-- Goal 4 -->
+            <div class="bg-gray-100 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                <div class="text-purple-600 text-4xl mb-4">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h4 class="font-semibold text-lg mb-2">Infrastructure Resilience</h4>
+                <p class="text-sm text-gray-700">
+                    Building future-proof networks through durable asphalt solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Goals (2025–2030) Section -->
+    <section class="bg-yellow-500 text-black py-16 px-6 md:px-16">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Strategic Goals (2025–2030)</h2>
+            <div class="w-20 h-1 bg-white mx-auto mb-12 rounded"></div>
+
+            <!-- Timeline Container -->
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12 md:gap-6 relative">
+                <!-- Timeline line for desktop -->
+                <div class="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-white z-0"></div>
+
+                <!-- Goal 1 -->
+                <div class="relative flex-1 text-center z-10">
+                    <div class="w-10 h-10 mx-auto rounded-full bg-white text-yellow-500 flex items-center justify-center mb-4 border-4 border-white shadow-md">
+                        1
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Expand Capacity</h4>
+                    <p class="text-sm">Production growth across target regions.</p>
+                </div>
+
+                <!-- Goal 2 -->
+                <div class="relative flex-1 text-center z-10">
+                    <div class="w-10 h-10 mx-auto rounded-full bg-white text-yellow-500 flex items-center justify-center mb-4 border-4 border-white shadow-md">
+                        2
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Mobile Repair Units</h4>
+                    <p class="text-sm">Urban & rural pothole response teams.</p>
+                </div>
+
+                <!-- Goal 3 -->
+                <div class="relative flex-1 text-center z-10">
+                    <div class="w-10 h-10 mx-auto rounded-full bg-white text-yellow-500 flex items-center justify-center mb-4 border-4 border-white shadow-md">
+                        3
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Public-Private Partnerships</h4>
+                    <p class="text-sm">Long-term road maintenance contracts.</p>
+                </div>
+
+                <!-- Goal 4 -->
+                <div class="relative flex-1 text-center z-10">
+                    <div class="w-10 h-10 mx-auto rounded-full bg-white text-yellow-500 flex items-center justify-center mb-4 border-4 border-white shadow-md">
+                        4
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Self-Healing Asphalt</h4>
+                    <p class="text-sm">Innovating smart asphalt tech via R&D.</p>
+                </div>
+
+                <!-- Goal 5 -->
+                <div class="relative flex-1 text-center z-10">
+                    <div class="w-10 h-10 mx-auto rounded-full bg-white text-yellow-500 flex items-center justify-center mb-4 border-4 border-white shadow-md">
+                        5
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">ISO 9001 Certification</h4>
+                    <p class="text-sm">Achieving global quality standards.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -150,12 +371,16 @@
             spaceBetween: 20,
             loop: true,
             autoplay: {
-                delay: 4000,     // Slide changes every 4 seconds
+                delay: 4000, // Slide changes every 4 seconds
                 disableOnInteraction: false, // Continue autoplay after user interacts
             },
             breakpoints: {
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 }
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                }
             },
             pagination: {
                 el: '.swiper-pagination',
@@ -164,4 +389,5 @@
         });
     </script>
 </body>
+
 </html>

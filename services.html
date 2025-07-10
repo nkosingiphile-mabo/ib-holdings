@@ -59,8 +59,7 @@
             </ul>
 
             <!-- CTA Button (Desktop only) -->
-            <a href="contact.html"
-                class="hidden md:inline-block bg-yellow-500 text-black font-semibold px-4 py-2 rounded hover:bg-yellow-400 transition duration-300">
+            <a href="contact.html" class="hidden md:inline-block bg-yellow-500 text-black font-semibold px-4 py-2 rounded hover:bg-yellow-400 transition duration-300">
                 Get a Quote
             </a>
         </div>
@@ -76,31 +75,165 @@
         </div>
     </nav>
 
-    <!-- Hero Section with Video Background -->
-    <section class="relative h-screen overflow-hidden">
-        <!-- Background Video -->
-        <video autoplay loop muted playsinline class="absolute w-full h-full object-cover">
-            <source src="assets/videos/hero-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-        </video>
-
-        <!-- Dark Overlay + Text Content -->
-        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <!-- Services Hero Section -->
+    <section class="relative h-[70vh] bg-cover bg-center" style="background-image: url('assets/images/asphalt_5.jpg');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
             <div class="text-center px-4 max-w-3xl mx-auto">
                 <h2 class="text-4xl md:text-6xl font-bold text-yellow-500 mb-6">
-                    Paving the Future with Asphalt Excellence
+                    Our Asphalt Services
                 </h2>
                 <div class="w-24 h-1 bg-white mx-auto mb-6 rounded"></div>
-                <p class="text-white text-lg md:text-xl mb-6">
-                    High-performance asphalt for safer roads and durable infrastructure designed to last for years.
+                <p class="text-white text-lg md:text-xl">
+                    From pothole repairs to full-scale road surfacing, we deliver precision, quality, and durability.
                 </p>
-                <a href="#contact"
-                    class="inline-block bg-yellow-500 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-400 transition duration-300">
-                    Get a Quote
-                </a>
             </div>
         </div>
     </section>
+
+    <!-- Our Solutions Section -->
+    <section class="bg-white text-black py-16 px-6 md:px-16">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Our Solutions</h2>
+            <div class="w-20 h-1 bg-yellow-500 mx-auto mb-10 rounded"></div>
+            <p class="text-lg leading-relaxed text-center mb-12">
+                We produce and deliver a range of asphalt products and services, tailored to meet diverse road and infrastructure needs.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Asphalt Products -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 flex items-center gap-2">
+                        <i class="fas fa-industry text-yellow-500"></i> Asphalt Products
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-fire text-yellow-500 mt-1"></i>
+                            <span>Hot Mix Asphalt (HMA)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-snowflake text-yellow-500 mt-1"></i>
+                            <span>Cold Mix Asphalt (ideal for pothole patching)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-oil-can text-yellow-500 mt-1"></i>
+                            <span>Bitumen Products</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-flask text-yellow-500 mt-1"></i>
+                            <span>Polymer-Modified Asphalt</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-leaf text-yellow-500 mt-1"></i>
+                            <span>Eco-friendly Asphalt Blends</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 flex items-center gap-2">
+                        <i class="fas fa-tools text-yellow-500"></i> Services
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-road text-yellow-500 mt-1"></i>
+                            <span>Pothole Repairs & Road Resurfacing</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-file-contract text-yellow-500 mt-1"></i>
+                            <span>Road Maintenance Contracts</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-layer-group text-yellow-500 mt-1"></i>
+                            <span>Asphalt Laying & Pavement Installation</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-city text-yellow-500 mt-1"></i>
+                            <span>Municipal Infrastructure Support</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-parking text-yellow-500 mt-1"></i>
+                            <span>Driveway & Parking Lot Surfacing</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-user-cog text-yellow-500 mt-1"></i>
+                            <span>Consultancy in Road Material Specifications</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section class="bg-yellow-500 text-black py-16 px-6 md:px-16">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Our Value Proposition</h2>
+            <div class="w-20 h-1 bg-white mx-auto mb-10 rounded"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Item 1 -->
+                <div class="flex items-start gap-4">
+                    <i class="fas fa-shield-alt text-3xl text-white mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-lg">High Durability Asphalt</h4>
+                        <p>Engineered to withstand extreme weather and heavy traffic.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="flex items-start gap-4">
+                    <i class="fas fa-truck-loading text-3xl text-white mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-lg">Rapid Deployment Cold Mix</h4>
+                        <p>For emergency pothole repairs with no heating required.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="flex items-start gap-4">
+                    <i class="fas fa-leaf text-3xl text-white mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-lg">Eco-Sensitive Products</h4>
+                        <p>Reduced emissions and recyclable material use.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="flex items-start gap-4">
+                    <i class="fas fa-warehouse text-3xl text-white mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-lg">Scalable Supply</h4>
+                        <p>Capacity to meet municipal and provincial demand.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="flex items-start gap-4">
+                    <i class="fas fa-users-cog text-3xl text-white mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-lg">Technical Support</h4>
+                        <p>Field teams and material scientists to guide best application.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get a Quote CTA Section -->
+    <section class="bg-white text-black py-16 px-6 md:px-16 text-center">
+        <h2 class="text-4xl font-extrabold mb-6">Ready to Pave the Future?</h2>
+        <p class="text-lg mb-8 max-w-xl mx-auto">
+            Contact IB Holdings Asphalt today for a free consultation and get a tailored quote that fits your project needs.
+        </p>
+        <a href="contact.html" class="inline-block bg-yellow-500 text-black font-bold px-8 py-4 rounded shadow-lg hover:bg-yellow-400 transition duration-300">
+            Get a Quote
+        </a>
+    </section>
+
+
+
 
     <!-- Footer -->
     <footer class="bg-black text-white py-12 px-6 md:px-16">
@@ -150,12 +283,16 @@
             spaceBetween: 20,
             loop: true,
             autoplay: {
-                delay: 4000,     // Slide changes every 4 seconds
+                delay: 4000, // Slide changes every 4 seconds
                 disableOnInteraction: false, // Continue autoplay after user interacts
             },
             breakpoints: {
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 }
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                }
             },
             pagination: {
                 el: '.swiper-pagination',
@@ -164,4 +301,5 @@
         });
     </script>
 </body>
+
 </html>
