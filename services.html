@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | IB Holdings Asphalt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .swiper-pagination {
+            margin-top: 1.5rem;
+            /* Push pagination down */
+            margin-bottom: 1rem;
+            /* Optional, add bottom spacing */
+        }
+    </style>
+</head>
+
+<body class="font-sans text-white bg-black">
+
+    <!-- Top Banner (Hidden on small screens) -->
+    <div class="hidden md:flex bg-yellow-500 text-black text-sm px-4 py-2 justify-between items-center">
+        <!-- Left: Contact Info -->
+        <div class="flex flex-wrap gap-x-6">
+            <span><i class="fas fa-phone-alt"></i> 031 123 4567</span>
+            <span><i class="fas fa-envelope"></i> info@ibholdings.co.za</span>
+            <span><i class="fas fa-clock"></i> Mon - Fri: 08:00 - 17:00</span>
+        </div>
+
+        <!-- Right: Socials -->
+        <div class="flex gap-4">
+            <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-black text-white px-6 py-4">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <h1 class="text-yellow-500 text-xl font-bold">IB Holdings Asphalt</h1>
+
+            <!-- Hamburger (mobile) -->
+            <button id="nav-toggle" class="md:hidden text-yellow-500 text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Links (Desktop) -->
+            <ul class="hidden md:flex gap-6 text-sm">
+                <li><a href="index.html" class="nav-link hover:text-yellow-400">Home</a></li>
+                <li><a href="about.html" class="nav-link hover:text-yellow-400">About</a></li>
+                <li><a href="services.html" class="nav-link hover:text-yellow-400">Services</a></li>
+                <li><a href="projects.html" class="nav-link hover:text-yellow-400">Projects</a></li>
+                <li><a href="gallery.html" class="nav-link hover:text-yellow-400">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link hover:text-yellow-400">Contact</a></li>
+            </ul>
+
+            <!-- CTA Button (Desktop only) -->
+            <a href="contact.html"
+                class="hidden md:inline-block bg-yellow-500 text-black font-semibold px-4 py-2 rounded hover:bg-yellow-400 transition duration-300">
+                Get a Quote
+            </a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden mt-4 md:hidden flex flex-col gap-4">
+            <a href="index.html" class="nav-link hover:text-yellow-400">Home</a>
+            <a href="about.html" class="nav-link hover:text-yellow-400">About</a>
+            <a href="services.html" class="nav-link hover:text-yellow-400">Services</a>
+            <a href="projects.html" class="nav-link hover:text-yellow-400">Projects</a>
+            <a href="gallery.html" class="nav-link hover:text-yellow-400">Gallery</a>
+            <a href="contact.html" class="nav-link hover:text-yellow-400">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section class="relative h-screen overflow-hidden">
+        <!-- Background Video -->
+        <video autoplay loop muted playsinline class="absolute w-full h-full object-cover">
+            <source src="assets/videos/hero-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Dark Overlay + Text Content -->
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div class="text-center px-4 max-w-3xl mx-auto">
+                <h2 class="text-4xl md:text-6xl font-bold text-yellow-500 mb-6">
+                    Paving the Future with Asphalt Excellence
+                </h2>
+                <div class="w-24 h-1 bg-white mx-auto mb-6 rounded"></div>
+                <p class="text-white text-lg md:text-xl mb-6">
+                    High-performance asphalt for safer roads and durable infrastructure designed to last for years.
+                </p>
+                <a href="#contact"
+                    class="inline-block bg-yellow-500 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-400 transition duration-300">
+                    Get a Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 px-6 md:px-16">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+
+            <!-- About -->
+            <div>
+                <h3 class="text-yellow-500 font-bold text-xl mb-4">IB Holdings Asphalt</h3>
+                <p class="text-sm leading-relaxed text-gray-300">
+                    Specialists in high-performance asphalt solutions for safer, longer-lasting roads.
+                </p>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-yellow-500 font-bold text-xl mb-4">Contact Us</h3>
+                <ul class="text-sm space-y-3 text-gray-300">
+                    <li><i class="fas fa-phone-alt mr-2 text-yellow-500"></i> 031 123 4567</li>
+                    <li><i class="fas fa-envelope mr-2 text-yellow-500"></i> info@ibholdings.co.za</li>
+                    <li><i class="fas fa-map-marker-alt mr-2 text-yellow-500"></i> Durban, South Africa</li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h3 class="text-yellow-500 font-bold text-xl mb-4">Follow Us</h3>
+                <div class="flex space-x-6 text-yellow-500 text-xl">
+                    <a href="#" aria-label="Facebook" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-10 border-t border-yellow-500 pt-6 text-center text-xs text-yellow-400">
+            &copy; 2025 IB Holdings Asphalt. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- SwiperJS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 4000,     // Slide changes every 4 seconds
+                disableOnInteraction: false, // Continue autoplay after user interacts
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
