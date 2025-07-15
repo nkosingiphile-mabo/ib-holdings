@@ -30,3 +30,24 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    const hiddenGrids = document.getElementById('hidden-grids');
+    const grids = hiddenGrids.querySelectorAll('.grid');
+    let currentGrid = 0;
+
+    loadMoreBtn.addEventListener('click', () => {
+      if (currentGrid < grids.length) {
+        // Show next grid
+        grids[currentGrid].classList.remove('hidden');
+        grids[currentGrid].classList.add('grid-animate');
+        currentGrid++;
+        
+        // Hide button if no more grids
+        if (currentGrid >= grids.length) {
+          loadMoreBtn.classList.add('hidden');
+        }
+      }
+    });
+  });
